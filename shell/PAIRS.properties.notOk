@@ -1,0 +1,185 @@
+#######################################################
+#######################################################
+### ???????PAIRS.properties                         ###
+### ????      - http://profittrailer.cn             ###
+### ??????  - http://wiki.profittrailer.io          ###
+###telegram      - https://t.me/PAULADSIC           ###
+###QQ group        - 585103                         ###
+###YOUTUBE: https://youtu.be/nd5LN1BVums            ###                                     
+### EMAIL:           pauladrealestate@hotmail.com   ###
+#######################################################
+#######################################################
+
+
+# 基本设定 (General Settings)
+MARKET = BTC
+ALL_trading_enabled = true
+
+ALL_enabled_pairs = ALL
+
+# 是否只卖不买
+ALL_sell_only_mode = true
+
+# 不可交易的币对
+BNBBTC_trading_enabled = false
+WINGSBTC_trading_enabled = false
+LUNBTC_trading_enabled = false
+EDOBTC_trading_enabled = false
+ICNBTC_trading_enabled = false
+GVTBTC_trading_enabled = false
+SNMBTC_trading_enabled = false
+MTLBTC_trading_enabled = false
+MTHBTC_trading_enabled = false
+NAVBTC_trading_enabled = false
+TRIGBTC_trading_enabled = false
+ADXBTC_trading_enabled = false
+MDABTC_trading_enabled = false
+ZECBTC_trading_enabled = false
+AMBBTC_trading_enabled = false
+IOSTBTC_trading_enabled = false
+INSBTC_trading_enabled = false
+VIBEBTC_trading_enabled = false
+IOTABTC_trading_enabled = false
+DGDBTC_trading_enabled = false
+DLTBTC_trading_enabled = false
+TNTBTC_trading_enabled = false
+#OSTBTC_trading_enabled = false
+
+# 预选币种设置 (Possible Buy Settings)
+# 设定所有币最小的购买数量，也可以单独设置
+ALL_min_buy_volume = 0
+# 设定所有币最小的购买单价，也可以单独设置
+ALL_min_buy_price = 0.00000800
+# 设定最低出价和最高出价之间的最大差价百分比，以允许新的买入定单。
+ALL_max_buy_spread = 2
+# 允许机器人购买币种数的最大值
+ALL_max_trading_pairs = 14
+# 钱包保留余额的最小值
+ALL_min_buy_balance = 0
+# 钱包保留余额占总数百分比的最小值
+ALL_min_buy_balance_percentage = 15
+# 币种的挂单数量与机器人挂单数量的比值，大于此值则允许成交：110指的是 110% 
+ALL_buy_available_volume_trigger = 110
+
+
+
+# 买入策略设置 (Buy Strategy Settings)
+#ALL_max_cost_percentage = 2
+ALL_max_cost = 0
+ALL_max_cost_percentage = 6
+#XRPBTC_max_cost_percentage = 1
+#TRXBTC_max_cost_percentage = 1
+ALL_buy_strategy = EMAGAIN
+#ALL_buy_strategy = LOWBB
+
+# 一旦小于ALL_buy_value值，则买入
+# 买入触发下行，实现利益最大化
+# 行情不好
+#ALL_buy_value = -1.75
+#ALL_trailing_buy = 0.5
+# 行情一般
+#ALL_buy_value = -0.86
+#ALL_trailing_buy = 0.21
+# 行情回升
+ALL_buy_value = -0.75
+ALL_trailing_buy = 0.2
+
+# 单独使用
+#BCDETC_buy_value = -3  
+
+# 使用SPREAD和CROSS策略的买入价值限制。
+ALL_buy_value_limit = 0
+
+
+#ALL_buy_strategy = EMASPREAD
+#ALL_buy_value = -7.5
+#ALL_trailing_buy = -15
+
+# 卖出策略(Sell Strategy Settings)
+ALL_sell_strategy = GAIN
+
+# 行情好
+ALL_sell_value = 0.88
+# 移动止损
+ALL_trailing_profit = 0.21
+
+# 行情不好
+#ALL_sell_value = 1
+#ALL_trailing_profit = 0.165
+
+# 最小利润（用于HIGHBB策略）
+ALL_min_profit = 0.618
+
+#WTCBTC_sell_value = 20
+#ENJBTC_sell_value = 9
+#LENDBTC_sell_value = 10
+#BCDBTC_sell_value = 5
+#NEOBTC_sell_value = 5
+#GASBTC_sell_value = 5
+#CNDBTC_sell_value = 50
+#POEBTC_sell_value = 10
+#EOSBTC_sell_value = 10
+#TRXBTC_sell_value = 4
+
+#BNBBTC_override_bought_price = 0.01430100
+
+#?????? ?Dump Strategy Settings)
+ALL_panic_sell_enabled = false
+All_stop_loss_trigger = 0
+ALL_stop_loss_timeout = 0
+
+#?????? (General Protection Mechanism)
+#ALL_DCA_enabled = -5
+#ALL_DCA_enabled = -4.5
+ALL_DCA_enabled = false
+
+#LTCBTC_DCA_enabled = true
+#DASHBTC_DCA_enabled = true
+#XRPBTC_DCA_enabled = true
+#NEOBTC_DCA_enabled = true
+#BCDBTC_DCA_enabled = true
+#CNDBTC_DCA_enabled = true
+#EOSBTC_DCA_enabled = true
+#QTUMBTC_DCA_enabled = true
+#LENDBTC_DCA_enabled = true
+#PPTBTC_DCA_enabled = true
+#TNTBTC_DCA_enabled = true
+#BTMBTC_DCA_enabled = true
+ELFBTC_DCA_enabled = true
+
+#ALL_BTC_price_drop_trigger = 0
+#ALL_BTC_price_drop_recover_trigger = 0
+
+#ALL_BTC_price_rise_trigger = 5
+#ALL_BTC_price_rise_recover_trigger = 3
+
+#ALL_consecutive_buy_trigger = 0
+#ALL_consecutive_sell_trigger = 0
+
+#ALL_pending_order_wait_time = 0
+#ALL_combined_cancel_pending_trigger = 0
+
+#?????? (Coinpair specific trading)
+#BTC-XXX_bought_price = 0.00004943
+#BTC-YYY_bought_price = 0.04216705
+
+#BTGBTC_override_bought_price = 0.0374829
+BNBBTC_bought_date = 2018-01-19
+#TRXBTC_override_bought_price = 0.000002
+#TRXBTC_override_bought_date = 2017-12-10
+
+#BCDBTC_bought_price = 0.00307400
+
+#BTC-XXX_DCA_enabled = false
+#BTC-YYY_DCA_enabled = false
+
+#BTC-XXX_trading_enabled = false
+#BTC-YYY_trading_enabled = false
+
+#BTC-XXX_sell_value = 0.4
+#BTC-YYY_sell_value = 0.7
+
+#BTC_XRP_override_bought_price = 0.00008000
+#BTC_XRP_override_bought_date = YYYY-MM-DD
+
+#cutLine
